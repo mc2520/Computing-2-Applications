@@ -16,6 +16,7 @@ const Exam = Object.create(null);
 //      returns [1,4,7]
 Exam.every_third = function () {
     return;
+
 };
 
 
@@ -29,8 +30,20 @@ Exam.every_third = function () {
 //       the input sentences "the cow jumped over the moon" and
 //                            "jack and jill went up the"
 //       returns "the jack cow and jumped jill over went the up moon the"
-Exam.merge_sentences = function () {
-    return;
+Exam.merge_sentences = function (sentence_1, sentence_2) {
+    let new_list = [];
+    list_1 = sentence_1.split(' ');
+    list_2 = sentence_2.split(' ');
+    if (list_1.length === list_2.lenth){
+        list_1.forEach(function(item, index){
+            new_list.push(item)
+            new_list.push(list_2[index]);
+                    });
+}
+        
+
+    else throw ValueError;
+    return list_1
 };
 
 // Write a function that returns the number of lowercase letters in
